@@ -1,5 +1,6 @@
-function changeBackground(color) {
-   document.body.style.background = color;
-}
+const element = document.getElementById("btn");
+element.addEventListener("click", changeBackground);
 
-window.addEventListener("click",function() { changeBackground('red') });
+function changeBackground() {
+   document.body.style.backgroundColor = "red";
+}
